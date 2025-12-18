@@ -1,16 +1,16 @@
 #creando una funcion de 3 parametros
 
-#def frase(nombre,apellido,adjetivo):
-#    return f'Hola {nombre} {apellido}, sos muy {adjetivo}'
+def frase1(nombre,apellido,adjetivo):
+    return f'Hola {nombre} {apellido}, sos muy {adjetivo}'
 
-#utilizando keyword arguments
-#frase_resultante = frase(adjetivo = "capo",nombre = "Lucas",apellido ="Dalto")
+#utilizando keyword arguments. Se especifica a que parámetro pertenece cada elemento, pero se debe especificar en todos
+frase_resultante = frase1(adjetivo = "capo",nombre = "Lucas",apellido ="Dalto")
 
 
 #creando la misma funcion con un parametro opcional y un valor por defecto
-def frase(nombre,apellido,adjetivo = "Tonto"):
+def frase2(nombre,apellido,adjetivo = "Tonto"):
     return f'Hola {nombre} {apellido}, sos muy {adjetivo}'
 
-frase_resultante = frase("Lucas","Dalto","inteligente")
+frase_resultante = frase2("Lucas","Dalto","inteligente")
 print(frase_resultante)
 

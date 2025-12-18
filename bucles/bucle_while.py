@@ -1,3 +1,4 @@
+# while se ejecuta mientras se cumpla una condición, y for solo recorre elementos
 
 #creando un contador que va a ir sumandose
 contador = 0
@@ -7,4 +8,3 @@ contador = 0
 while contador < 16:
     contador+= 1
     print(contador)
-    
