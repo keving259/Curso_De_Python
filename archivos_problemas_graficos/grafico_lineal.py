@@ -1,14 +1,12 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import matplotlib.pyplot as plt # Librería de visualización de gráficos
+import seaborn as sns # Librería para mejorar la estética de los gráficos estadísticos
 
-df = pd.read_csv("archivos_problemas_graficos\\pedos.csv")
+df = pd.read_csv('archivos_problemas_graficos/pedos.csv')
 
-#creando el grafico
-sns.lineplot(x="fecha",y="pedos",data=df)
+# Creando el gráfico
+sns.lineplot(x='fecha', y='pedos', data=df)
 
-#creando un punto en el momento de mas pedos
-plt.plot("01-09",17,"o")
+plt.plot('01-09', 17, 'o', color='red') # Punto destacado
 
-#mostrando el grafico
 plt.show()

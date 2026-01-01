@@ -1,11 +1,7 @@
-
-#abriendo el archivo con with open
-with open("archivos\\texto_de_dalto.txt",encoding="UTF-8") as archivo:
-    
-    #leemos el archivo
+# Abriendo el archivo con with open
+with open("archivos\\texto_de_dalto.txt", encoding='utf-8') as archivo:
+    # Leemos el archivo
     contenido = archivo.read()
-    
-    #mostramos el archivo
     print(contenido)
-    
-#no es necesario cerrarlo al usar with open
+
+# No es necesario cerrarlo al usar with open

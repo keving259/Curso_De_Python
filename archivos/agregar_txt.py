@@ -1,6 +1,4 @@
-with open('archivos\\texto_de_dalto.txt','a',encoding="UTF-8") as archivo:
-    #usando un bucle para agregar varias lineas
-    archivo.write("\n")
-    for i in range(5):
-        #agregando lineas
-        archivo.write(f"Linea {i+1} agregada\n")
+# Para usar append (agregar) se usa "a"
+with open("archivos\\texto_de_dalto.txt", 'a', encoding='utf-8') as archivo:
+    # Usando un bucle para agregar varias líneas
+    [archivo.write(f"\nLínea {i+1} agregada") for i in range(5)]

@@ -1,3 +1,3 @@
-import paquete.saludar
+import paquete
 
-print(paquete.saludar.saludar("dalto"))
+print(type(paquete))

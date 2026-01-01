@@ -1,22 +1,22 @@
 #importando un modulo y asignandole el nombre "m_saludar"
-#import modulo_saludar as m_saludar
 
-#desde ese modulo, importamos dos funciones y les cambiamos el nombre
-from modulo_saludar import saludar as saludar_normal,saludar_raro as saludar_como_coscu
+# Desde ese modulo se importan dos funciones y les cambiamos el nombre from
+from modulo_saludar import saludar as saludar_normal, saludar_raro as saludar_como_coscu
+import modulos.modulo_saludar as m_saludar
 
-#creamos las variables con los saludos
+# Creamos las variables con los saludos
 saludo = saludar_normal("Lucas")
 saludo_raro = saludar_como_coscu("Fran")
 
-#mostramos los resultados
+# Mostramos los resultados
 print(saludo)
 print(saludo_raro)
 
-#para ver las propiedades y metodos de el namespace
+# Para vere las propiedades y métodos del namespace
 #print(dir(m_saludar))
 
-#accedemos al nombre de este modulo
+# Se accede al nombre del modulo que se importó
 print(__name__)
 
-#accedemos al nombre del modulo llamado
-#print(m_saludar.__name__)
+# Se accede al nombre del modulo llamado
+print(m_saludar.__name__)

@@ -1,9 +1,12 @@
 #si el modulo estuviera dentro de una carpeta en la misma ruta 
-#import funciones_buenas.saludar as m_saludar
 
-import sys
+#import funciones_buenas.saludar as m_saludar # Se importa el modulo saludar
 
-sys.path.append("c:\\Users\\Rainbow 6\\Desktop\\Curso de Python DALTO\\funciones_buenas")
+# Si está en una ruta atrás
+import sys # Modulo built-in (integrado en Python)
+
+sys.path.append("C:\\Users\\kevin\\OneDrive\\Escritorio\\a\\python\\Curso_De_Python-main\\Curso_De_Python\\funciones_buenas")
+print(sys.path)
 
 import saludar as modulo_saludo
 
