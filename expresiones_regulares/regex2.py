@@ -10,7 +10,7 @@ pattern = r"\d{2}/\d{2}/\d{4}"
 replacement = "Fecha oculta"
 
 # Reemplazar todas las apariciones del patrón en la cadena de texto
-new_text = re.sub(pattern, replacement, text)
+new_text = re.sub(pattern, replacement, text) # Reemplaza el patrón (pattern) por el contenido de la variable replacement en text
 
 # Imprimir el resultado
 print("Texto modificado:", new_text)
